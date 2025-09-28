@@ -1,0 +1,109 @@
+/* style.css Main stylesheet for student class scheduler application */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form label {
+    font-weight: bold;
+}
+
+select, input[type="text"], button {
+    padding: 5px 8px;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Table layouts with consistent column sizing */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background: white;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Classes page table column proportions */
+.classes-table th:nth-child(1), .classes-table td:nth-child(1) { width: 30%; } /* Class Name */
+.classes-table th:nth-child(2), .classes-table td:nth-child(2) { width: 15%; } /* Day of Week */
+.classes-table th:nth-child(3), .classes-table td:nth-child(3) { width: 15%; } /* Semester */
+.classes-table th:nth-child(4), .classes-table td:nth-child(4) { width: 15%; } /* Status */
+.classes-table th:nth-child(5), .classes-table td:nth-child(5) { width: 15%; } /* Waitlist Position */
+.classes-table th:nth-child(6), .classes-table td:nth-child(6) { width: 10%; } /* Action */
+
+/* Schedule classes page table column proportions */
+.schedule-table th:nth-child(1), .schedule-table td:nth-child(1) { width: 25%; } /* Class Name */
+.schedule-table th:nth-child(2), .schedule-table td:nth-child(2) { width: 20%; } /* Day of Week */
+.schedule-table th:nth-child(3), .schedule-table td:nth-child(3) { width: 15%; } /* Slots Left */
+.schedule-table th:nth-child(4), .schedule-table td:nth-child(4) { width: 15%; } /* Waitlist Count */
+.schedule-table th:nth-child(5), .schedule-table td:nth-child(5) { width: 15%; } /* Status */
+.schedule-table th:nth-child(6), .schedule-table td:nth-child(6) { width: 10%; } /* Add/Swap */
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+p.error {
+    color: red;
+}
+
+p.success {
+    color: green;
+}
+
+.waitlist { 
+    color: orange; 
+}
+
+.enrolled { 
+    color: green; 
+}
+
+.swap-notice { 
+    color: #ff8c00; 
+    font-style: italic; 
+    font-size: 0.9em; 
+}
+
+#searchBox {
+    width: 300px;
+    padding: 5px;
+}
